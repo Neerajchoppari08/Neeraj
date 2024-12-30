@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.jpeg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Certificates">Certificates</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <span>Neeraj</span><br>Choppari</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/sample.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I’m Neeraj, a B.Tech student with a passion for coding and problem-solving. I love exploring new technologies, building innovative projects, and continuously challenging myself to grow. My interests include machine learning, software development, and staying updated with tech trends. I’m driven to make a meaningful impact in the tech world.</p> 
+                
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages</span><br>C,Python,C++,Java</li>
+                        <li><span>Web Technologies</span><br>HTML,CSS,JavaScript</li>
+                        <li><span>Tools and Frameworks</span><br>Git,Github,Visual Studio Code</li>
+                        <li><span>DataBase</span><br>SQL,MySQL,PLSQL,MongoDB</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-2026</span><br>B-Tech from Sr University</li>
+                        <li><span>2020-2022</span><br>Intermediate from Alphores Junior College</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------Certificates---------------- -->
+<div id="Certificates">
+    <div class="container">
+        <h1 class="sub-title">My Certificates</h1>
+        <br>
+        <div class="Certificates-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <li>Foundations of Project Management</li>
+                <br>
+                <a href="#"></a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <li>CCNA: Introduction to Networks.</li>
+                <br>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <li>CCNA: Switching, Routing, and Wireless Essentials.</li>
+                <br>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <li>Learning TensorFlow 2.0</li>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Hate Speech Detection| Deep Learning and Transfer Learnin</h3>
+                    <p>This research proposes a model to classify tweets into three categories: Hate, Offensive, and Neither, using
+                        BI-LSTM with Glove embeddings and transfer learning approaches (BERT, DistilBERT, GPT-2).
+                        After hyperparameter tuning, the BI-LSTM model achieved over 92 percent accuracy on the test data.
+                         The model includes functionalities for text classification, sentiment analysis, and data augmentation, aimed at
+                        automating hate speech detection for brands to efficiently manage their online presence.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>House Rent Prediction| Machine Learning</h3>
+                    <p>Developed a house rent prediction system for landlords and tenants and it impact on budgeting and financial
+                        planning.
+                        Implemented Linear Regression,Support Vector Machine,Ridge Regression,Lasso Regression,K-Nearest
+                        Neighbours,It emphasize how accurate rent predictions can benefit various stakeholders, such as landlords,
+                        tenants, and property managers, in terms of financial planning, decision-making, and resource allocation.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Health-Driven Tablet Selection And Purchase System | C Language</h3>
+                    <p> Developed a program for a tablet store that allows customers to select tablets based on their health problem</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>neerajchoppari08@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 6281021397</p>
+                <div class="social-icons">
+                    <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i>
+                    
+                </div>
+                <a href="images/Neeraj_Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzqEA1SqioOXY1v95p3PhEazRREGGSbtGnvorKqIk3wysA_SAcPSOV35Xkcnp4J6sxM/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
